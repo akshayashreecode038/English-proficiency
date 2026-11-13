@@ -1,7 +1,7 @@
 # 📚 English Level Finder
 
 <p align="center">
-  **An Interactive English Proficiency Assessment Platform**
+  An Interactive English Proficiency Assessment Platform
   <br>
   Helping students discover their English proficiency level through personalized assessments and skill-based analysis.
 </p>
