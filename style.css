@@ -1,0 +1,25 @@
+:root{--bg:#f7f6f2;--card:#fff;--tx:#1f2430;--mut:#667085;--ac:#4f46e5;--ok:#15803d;--bad:#b42318;--bd:#e4e2da;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#15171c;--card:#1e2128;--tx:#eceef3;--mut:#9aa3b2;--ac:#8b86ff;--ok:#4ade80;--bad:#f97066;--bd:#31353f}}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:24px;margin:0 0 4px}h2{font-size:18px;margin:0 0 8px}
+.mut{color:var(--mut)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px;margin-top:16px}
+input[type=text]{width:100%;padding:12px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit;margin:10px 0}
+button{font:inherit;cursor:pointer}
+.btn{background:var(--ac);color:#fff;border:0;border-radius:10px;padding:12px 18px;font-weight:600}
+.btn:disabled{opacity:.4;cursor:default}
+.opt{display:block;width:100%;text-align:left;background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:10px;padding:12px;margin:8px 0}
+.opt.sel{border-color:var(--ac);outline:2px solid var(--ac)}
+.bar{height:6px;background:var(--bd);border-radius:6px;overflow:hidden;margin-bottom:14px}.bar i{display:block;height:100%;background:var(--ac)}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:20px;background:var(--bg);border:1px solid var(--bd);color:var(--mut)}
+.tabs{display:flex;gap:8px;margin-top:16px}.tabs button{flex:1;padding:10px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx)}
+.tabs button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.big{font-size:44px;font-weight:700;color:var(--ac);line-height:1}
+.ladder{display:flex;gap:6px;margin:6px 0 2px}.ladder span{flex:1;text-align:center;font-size:13px;padding:6px 0;border-radius:8px;background:var(--bg);border:1px solid var(--bd);color:var(--mut)}
+.ladder span.ok{background:var(--ok);color:#fff;border-color:var(--ok)}
+.ladder span.part{border-color:var(--bad);color:var(--bad)}
+ul{padding-left:20px;margin:6px 0}
+.row{margin:14px 0}
